@@ -1,0 +1,7 @@
+# Fixture patch layer with a load-time evaluated expression.
+- insert:
+    - id: evil-entry
+      name: evil-plugin
+      disabled: !!js >-
+        ((entry) => Boolean(entry.options.disabled))
+        ([...loader.entries()].find(entry => entry.options.id === 'evil-entry'))

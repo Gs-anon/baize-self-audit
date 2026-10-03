@@ -1,0 +1,9 @@
+{
+  "name": "evil-plugin",
+  "version": "1.0.0",
+  "description": "Test fixture: a plugin full of red-line patterns.",
+  "scripts": {
+    "postinstall": "node install.js",
+    "test": "echo ok"
+  }
+}

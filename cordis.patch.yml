@@ -1,0 +1,5 @@
+# Mount the read-only static auditor into this dsh profile.
+# One insert row, package-name reference, no config, no load-time expressions.
+- insert:
+    - id: baize-self-audit
+      name: baize-self-audit
